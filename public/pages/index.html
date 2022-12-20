@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-logo">
+            <img src="../assets/images/logo.svg" alt="Logo Alura"> 
+        </header>
+        <main>
+            <div class="container-main">
+                <section class="container-encrypt">
+                    <textarea id="message" class="textarea" name="textarea" cols="50" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="instruction">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="container-btn">
+                        <button id="btn-encrypt" class="btn-encrypt btn">Encriptar</button>
+                        <button id="btn-decrypt" class="btn-decrypt btn">Desencriptar</button>
+                    </div>
+                </section>
+                <section class="container-result">
+                    <div id="container-image" class="container-image">
+                        <img id="image-muñeco" src="../assets/images/muñeco.svg" alt="Muñeco Imagen">
+                        <p id="legend-1" class="legend-1">Ningún texto mensaje fue encontrado</p>
+                        <p id="legend-2" class="legend-2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                    <textarea id="result" class="result" readonly></textarea>
+                    <button id="btn-copy" class="btn-copy">Copiar</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy 2022 Nicolas Santiago </p>
+        </footer>
+    </div>
+    <script src="../js/index.js"></script>
+    <script src="../js/encrypt.js"></script>
+</body>
+</html>
